@@ -1,8 +1,8 @@
 ---
-title: 'This is my first post'
+title: 'First post'
 date: '2022-12-25'
 ---
 
-# First Post
+## First Post
 
 I am so excited to create this 😈
