@@ -2,7 +2,7 @@
 
 ## Description
 
-This repo is implemented based on NextJS Getting Started tutorial, to learn NextJS. It will be used to serve my blogs.
+This repo is implemented based on NextJS Getting Started tutorial, to learn NextJS. It will also be used to serve my blogs.
 
 ## Roadmap
 
@@ -11,3 +11,4 @@ This repo is implemented based on NextJS Getting Started tutorial, to learn Next
 - [ ] TailwindCSS
 - [ ] TS Adoption
 - [ ] ESlint
+- [ ] Dark mode?
