@@ -48,7 +48,7 @@ export function getAllPostPaths() {
   return paths;
 }
 
-export async function getPostData(id: string): Post {
+export async function getPostData(id: string): Promise<Post> {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 

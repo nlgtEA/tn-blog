@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css';
 import Layout, { siteTitle } from '../../components/layout';
-import { getAllPostPaths, getPostData, Post } from '../../lib/posts';
+import { getAllPostPaths, getPostData, Post as PostType} from '../../lib/posts';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-export default function Post({ postData }: { postData: Post }) {
+export default function Post({ postData }: { postData: PostType }) {
   return (
     <Layout>
       <Head>
