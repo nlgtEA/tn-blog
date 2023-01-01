@@ -7,8 +7,8 @@ This repo is implemented based on NextJS Getting Started tutorial, to learn Next
 ## Roadmap
 
 - [x] Clone the tutorial
-- [ ] NextJS 13
+- <del> NextJS 13 </del>
 - [ ] TailwindCSS
-- [ ] TS Adoption
+- [x] TS Adoption
 - [ ] ESlint
 - [ ] Dark mode?

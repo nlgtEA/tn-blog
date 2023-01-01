@@ -6,7 +6,13 @@ import Link from 'next/link';
 
 export const siteTitle = "Thuan's blog";
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className={styles.container}>
       <Head>
