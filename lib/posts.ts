@@ -11,8 +11,12 @@ export type RawPostData = {
   date: string;
 };
 
+const getAllFileNames = () => {
+  return fs.readdirSync(postsDirectory).filter(fileName => !fileName.startsWith('draft-'));
+}
+
 export function getSortedPostsData() {
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = getAllFileNames()
   const allPostsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, '');
 
@@ -37,7 +41,7 @@ export function getSortedPostsData() {
 }
 
 export function getAllPostPaths() {
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = getAllFileNames()
 
   const paths = fileNames.map((name) => ({
     params: {
