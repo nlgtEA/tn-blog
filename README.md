@@ -10,5 +10,6 @@ This repo is implemented based on NextJS Getting Started tutorial, to learn Next
 - <del> NextJS 13 </del>
 - [ ] TailwindCSS
 - [x] TS Adoption
-- [ ] ESlint
+- [x] ESlint
 - [ ] Dark mode?
+- [ ] Tests
