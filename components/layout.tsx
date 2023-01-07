@@ -24,18 +24,21 @@ export default function Layout({
         ></link>
         <meta name="description" content="Thuan Ngo's personal blog" />
       </Head>
-      <header className={styles.header}>
+      <header className="flex flex-col md:flex-row gap-4 items-center mb-8">
         {home ? (
           <>
             <Image
               priority
               src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              className="rounded-full"
+              height={110}
+              width={110}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}>Thuan Ngo</h1>
+            <section>
+              <h1 className="font-bold text-4xl mb-2">Thuan Ngo</h1>
+              <p>Hello there 👋 Welcome to my blog</p>
+            </section>
           </>
         ) : (
           <>
@@ -43,14 +46,14 @@ export default function Layout({
               <Image
                 priority
                 src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
+                className="rounded-full"
+                height={80}
+                width={80}
                 alt=""
               />
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
+              <Link href="/" className="text-black">
                 Thuan Ngo
               </Link>
             </h2>

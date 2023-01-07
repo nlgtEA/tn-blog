@@ -3,7 +3,11 @@ import Head from 'next/head';
 
 import Date from '../../components/date';
 import Layout, { siteTitle } from '../../components/layout';
-import { getAllPostPaths, getPostData, Post as PostType} from '../../lib/posts';
+import {
+  getAllPostPaths,
+  getPostData,
+  Post as PostType,
+} from '../../lib/posts';
 import utilStyles from '../../styles/utils.module.css';
 
 export default function Post({ postData }: { postData: PostType }) {
@@ -12,11 +16,11 @@ export default function Post({ postData }: { postData: PostType }) {
       <Head>
         <title>{`${siteTitle} | ${postData.title}`}</title>
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+      <article className="prose prose-sm md:prose-base">
+        <div>
           <Date dateString={postData.date} />
         </div>
+        <h1>{postData.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>

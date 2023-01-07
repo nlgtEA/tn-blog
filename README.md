@@ -8,7 +8,7 @@ This repo is implemented based on NextJS Getting Started tutorial, to learn Next
 
 - [x] Clone the tutorial
 - <del> NextJS 13 </del>
-- [ ] TailwindCSS
+- [x] TailwindCSS
 - [x] TS Adoption
 - [x] ESlint
 - [ ] Dark mode?
