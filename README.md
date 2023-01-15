@@ -11,6 +11,7 @@ This repo is implemented based on NextJS Getting Started tutorial, to learn Next
 - [x] TailwindCSS
 - [x] TS Adoption
 - [x] ESlint
+- [ ] Code syntax highlighting
 - [ ] Dark mode?
 - [ ] Tests
 
